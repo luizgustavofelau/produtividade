@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Sistema de Restaurante</title>
+		<style>
+			:root { --bg:#f7f7f9; --card:#ffffff; --accent:#d35400; --muted:#6b7280; }
+			html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#111}
+			.container{max-width:1100px;margin:32px auto;padding:20px}
+			header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+			h1{margin:0;font-size:1.25rem}
+			.lead{color:var(--muted);margin:4px 0 0;font-size:.95rem}
+			main{margin-top:20px}
+			#app{min-height:320px;background:var(--card);border-radius:10px;padding:20px;box-shadow:0 6px 18px rgba(15,23,42,.06)}
+			footer{margin-top:20px;color:var(--muted);font-size:.9rem;text-align:center}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div>
+					<h1>Sistema de Restaurante</h1>
+					<div class="lead">Painel de controle — pedidos, mesas e cardápio</div>
+				</div>
+			</header>
+
+			<main>
+				<div id="app" aria-live="polite">
+					<!-- Saída de dados da aplicação vai renderizar aqui -->
+				</div>
+			</main>
+
+			<footer>
+				&copy; <span id="year"></span> Sistema de Restaurante
+			</footer>
+		</div>
+
+		<script>
+			// Pequeno helper para inserir o ano atual sem depender de app.js
+			document.getElementById('year').textContent = new Date().getFullYear();
+		</script>
+
+		<script src="app.js"></script>
+	</body>
+</html>
