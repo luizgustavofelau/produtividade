@@ -1,36 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Sistema de Restaurante</title>
-		
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<div>
-					<h1>Sistema de Restaurante</h1>
-					<div class="lead">Painel de controle — pedidos, mesas e cardápio</div>
-				</div>
-			</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-			<main>
-				<div id="app" aria-live="polite">
-					<!-- Saída de dados da aplicação vai renderizar aqui -->
-				</div>
-			</main>
+    <header>
+        <h1>🍽️ Bistrô do Dev</h1>
+        <p>O melhor sabor da programação</p>
+    </header>
+    
+    <main id="app"></main>
 
-			<footer>
-				&copy; <span id="year"></span> Sistema de Restaurante
-			</footer>
-		</div>
-
-		<script>
-			// Pequeno helper para inserir o ano atual sem depender de app.js
-			document.getElementById('year').textContent = new Date().getFullYear();
-		</script>
-
-		<script src="app.js"></script>
-	</body>
+    <script src="app.js"></script>
+</body>
 </html>
