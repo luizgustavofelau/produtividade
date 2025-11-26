@@ -48,3 +48,6 @@ if (typeof window !== 'undefined') {
   window.Prato = Prato;
   window.Restaurante = Restaurante;
 }
+
+
+console.log("Ambiente atual:", "Produção"); 
